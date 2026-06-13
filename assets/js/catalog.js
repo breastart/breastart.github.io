@@ -13,7 +13,7 @@ const grid=document.getElementById("grid");
 const filters=document.getElementById("filters");
 const countEl=document.getElementById("count");
 
-fetch("data/catalog.json").then(r=>r.json()).then(d=>{DATA=d;buildFilters();render();})
+fetch("data/catalog.json").then(r=>r.json()).then(d=>{DATA=d;const pre=new URLSearchParams(location.search).get("series");if(pre&&d.some(x=>x.series===pre))current=pre;buildFilters();render();})
   .catch(()=>{grid.innerHTML='<p>Не вдалося завантажити каталог. Відкрийте сайт через GitHub Pages (не локальний файл).</p>';});
 
 function buildFilters(){
