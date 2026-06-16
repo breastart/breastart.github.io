@@ -934,5 +934,31 @@
   "status": "available",
   "image": "images/puls-zhyttya.jpg",
   "px": "1320×1859"
+ },
+ {
+  "id": "ya-hochu-bachyty-svitlo",
+  "title": "Я хочу бачити світло",
+  "series": "Окремі роботи",
+  "year": "2026",
+  "size": "100×120",
+  "medium": "полотно, акрил",
+  "price": 40000,
+  "currency": "грн",
+  "status": "available",
+  "image": "images/ya-hochu-bachyty-svitlo.jpg",
+  "px": null
+ },
+ {
+  "id": "uyava-3",
+  "title": "Уява 3",
+  "series": "Щось загадково-казкове",
+  "year": "2025",
+  "size": "20×30",
+  "medium": "полотно, акрил",
+  "price": null,
+  "currency": "грн",
+  "status": "sold",
+  "image": "images/uyava-3.jpg",
+  "px": null
  }
 ]

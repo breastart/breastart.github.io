@@ -33,8 +33,10 @@ function render(){
     const c=document.createElement("article");
     c.className="card"+(w.status==="sold"?" sold":"");
     const price = w.status==="sold" ? "Продано" : (w.price?fmt(w.price)+" грн":"За запитом");
+    const media = w.image ? `<img loading="lazy" src="${w.image}" alt="${w.title}">`
+      : `<div class="noimg">Зображення<br>готується</div>`;
     c.innerHTML=`<div class="ph">${w.status==="sold"?'<span class="badge">Продано</span>':''}
-      <img loading="lazy" src="${w.image}" alt="${w.title}"></div>
+      ${media}</div>
       <div class="body"><div class="t">${w.title}</div>
       <div class="s">${w.series}</div>
       <div class="row"><span class="price">${price}</span><span class="dim">${w.size} см</span></div></div>`;
@@ -49,7 +51,7 @@ const lb=document.getElementById("lb");
 function openLB(w){
   const avail=w.status!=="sold";
   const price = avail ? (w.price?fmt(w.price)+" грн":"Ціна за запитом") : "";
-  lb.querySelector(".lb-img").innerHTML=`<img src="${w.image}" alt="${w.title}">`;
+  lb.querySelector(".lb-img").innerHTML = w.image ? `<img src="${w.image}" alt="${w.title}">` : `<div class="noimg" style="min-height:320px">Зображення готується</div>`;
   lb.querySelector(".lb-info").innerHTML=`
     <div class="eyebrow">${w.series}</div>
     <h3>${w.title}</h3>
