@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Усі посилання — BREAST ART</title>
+<meta name="description" content="Усі посилання BREAST ART: портфоліо, купити картину або принт, запис на жіночу арт-практику. Живопис власним тілом — Діана Чмих.">
+<meta name="theme-color" content="#FBF8F2">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="BREAST ART — усі посилання">
+<meta property="og:description" content="Портфоліо · Купити картину/принт · Жіноча арт-практика">
+<meta property="og:url" content="https://breastart.github.io/links/">
+<meta property="og:image" content="https://breastart.github.io/images/artist-hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="https://breastart.github.io/assets/img/stamp.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#1E1814; --ink-soft:#5f5142; --field:#FBF8F2; --field-2:#F1EADB;
+    --line:#E4D9C4; --gold:#B08D57;
+    --c1:#EA5A2B; --c2:#3E6AE1; --c4:#D6286E;
+    --max:440px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;}
+  body{
+    font-family:"Manrope",system-ui,sans-serif; color:var(--ink);
+    background:var(--field); min-height:100svh;
+    -webkit-font-smoothing:antialiased; display:flex; justify-content:center;
+  }
+  body::before{
+    content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
+    background:
+      radial-gradient(120% 80% at 50% -10%, var(--field-2) 0%, transparent 60%),
+      url("https://breastart.github.io/assets/img/stamp.png") center 62% / 78% no-repeat;
+    opacity:.05;
+  }
+  .hub{
+    position:relative; z-index:1; width:100%; max-width:var(--max);
+    padding:20px 22px calc(40px + env(safe-area-inset-bottom));
+    display:flex; flex-direction:column; gap:30px;
+  }
+
+  /* перемикач мови — як на /shop і /practice */
+  .topbar{ display:flex; justify-content:flex-end; }
+  .lang-switch{
+    display:inline-flex; border:1px solid var(--line); border-radius:999px;
+    background:#fff; overflow:hidden;
+  }
+  .lang-switch button{
+    font-family:"Manrope",sans-serif; font-size:12px; font-weight:700;
+    letter-spacing:.06em; padding:7px 13px; border:0; background:transparent;
+    color:var(--ink-soft); cursor:pointer; transition:color .15s, background .15s;
+  }
+  .lang-switch button[aria-pressed="true"]{ background:var(--c1); color:#fff; }
+
+  .head{ text-align:center; }
+  .head .mark{
+    width:104px; height:104px; margin:0 auto 16px;
+    border:1px solid var(--line); border-radius:50%;
+    background:#fff url("https://breastart.github.io/assets/img/stamp.png") center/80% no-repeat;
+    box-shadow:0 10px 30px rgba(30,24,20,.09);
+  }
+  .wordmark{ font-family:"Cormorant Garamond",serif; font-weight:600; letter-spacing:.16em; font-size:30px; line-height:1; margin:0; }
+  .wordmark span{ color:var(--c1); }
+  .handle{ margin:8px 0 0; font-size:13px; font-weight:600; letter-spacing:.04em; color:var(--ink-soft); }
+  .tagline{ margin:12px 0 0; font-family:"Cormorant Garamond",serif; font-style:italic; font-size:18px; color:var(--ink-soft); }
+
+  .links{ display:flex; flex-direction:column; gap:14px; }
+  .tile{
+    --bar:var(--c1); position:relative; display:flex; align-items:center; gap:15px;
+    padding:17px 18px; background:#fff; color:var(--ink); text-decoration:none;
+    border:1px solid var(--line); border-radius:16px; box-shadow:0 4px 16px rgba(30,24,20,.05);
+    overflow:hidden; transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  }
+  .tile::before{ content:""; position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--bar); transition:width .18s ease; }
+  .tile:nth-child(1){ --bar:var(--c2); }
+  .tile:nth-child(2){ --bar:var(--c1); }
+  .tile:nth-child(3){ --bar:var(--c4); }
+  .tile .ico{ flex:0 0 auto; width:46px; height:46px; display:grid; place-items:center; font-size:22px; background:var(--field-2); border-radius:12px; border:1px solid var(--line); }
+  .tile .txt{ flex:1 1 auto; min-width:0; }
+  .tile .t1{ display:block; font-family:"Cormorant Garamond",serif; font-weight:600; font-size:20px; line-height:1.15; letter-spacing:.01em; }
+  .tile .t2{ display:block; font-size:12.5px; color:var(--ink-soft); margin-top:3px; }
+  .tile .arr{ flex:0 0 auto; color:var(--bar); transition:transform .18s ease; font-size:18px; line-height:1; }
+  .tile:hover, .tile:focus-visible{ transform:translateY(-2px); box-shadow:0 10px 26px rgba(30,24,20,.10); border-color:var(--bar); outline:none; }
+  .tile:hover::before, .tile:focus-visible::before{ width:8px; }
+  .tile:hover .arr, .tile:focus-visible .arr{ transform:translateX(4px); }
+  .tile:focus-visible{ box-shadow:0 0 0 3px color-mix(in srgb, var(--bar) 35%, transparent), 0 10px 26px rgba(30,24,20,.10); }
+
+  .foot{ text-align:center; }
+  .social{ display:flex; justify-content:center; gap:10px; margin-bottom:16px; }
+  .social a{ font-size:12.5px; font-weight:600; letter-spacing:.03em; color:var(--ink-soft); text-decoration:none; padding:8px 14px; border:1px solid var(--line); border-radius:999px; background:#fff; transition:color .18s ease, border-color .18s ease; }
+  .social a:hover{ color:var(--c1); border-color:var(--c1); }
+  .foot .stamp{ width:40px; opacity:.5; }
+  .copy{ margin:8px 0 0; font-size:11px; color:var(--ink-soft); letter-spacing:.04em; }
+
+  @media (prefers-reduced-motion:no-preference){
+    .head,.tile,.foot{ animation:rise .5s ease both; }
+    .tile:nth-child(1){ animation-delay:.06s; }
+    .tile:nth-child(2){ animation-delay:.12s; }
+    .tile:nth-child(3){ animation-delay:.18s; }
+    .foot{ animation-delay:.24s; }
+    @keyframes rise{ from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:none;} }
+  }
+</style>
+</head>
+<body>
+  <main class="hub">
+
+    <div class="topbar">
+      <span class="lang-switch" role="group" aria-label="Language">
+        <button data-lang="uk" aria-pressed="true">UA</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </span>
+    </div>
+
+    <header class="head">
+      <div class="mark" role="img" aria-label="BREAST ART"></div>
+      <p class="wordmark">BREAST<span>ART</span></p>
+      <p class="handle">@breast__art</p>
+      <p class="tagline" data-uk="Живопис власним тілом · Діана Чмих" data-en="Body painting · Diana Chmykh">Живопис власним тілом · Діана Чмих</p>
+    </header>
+
+    <nav class="links" aria-label="Links">
+
+      <a class="tile" data-ext href="https://drive.google.com/file/d/1QR0rcWlmf6NVr_5ZO3kEf2W-CyWT6Vb5/view?usp=sharing" target="_blank" rel="noopener">
+        <span class="ico" aria-hidden="true">🎨</span>
+        <span class="txt">
+          <span class="t1" data-uk="Портфоліо" data-en="Portfolio">Портфоліо</span>
+          <span class="t2" data-uk="Каталог робіт у PDF" data-en="Catalogue of works (PDF)">Каталог робіт у PDF</span>
+        </span>
+        <span class="arr" aria-hidden="true">→</span>
+      </a>
+
+      <a class="tile" data-base="https://breastart.github.io/shop" href="https://breastart.github.io/shop">
+        <span class="ico" aria-hidden="true">🖼️</span>
+        <span class="txt">
+          <span class="t1" data-uk="Купити картину / принт" data-en="Buy a painting / print">Купити картину / принт</span>
+          <span class="t2" data-uk="Оригінали та принти з доставкою" data-en="Originals &amp; prints, with delivery">Оригінали та принти з доставкою</span>
+        </span>
+        <span class="arr" aria-hidden="true">→</span>
+      </a>
+
+      <a class="tile" data-base="https://breastart.github.io/practice" href="https://breastart.github.io/practice">
+        <span class="ico" aria-hidden="true">🌷</span>
+        <span class="txt">
+          <span class="t1" data-uk="Арт-практика для жінок" data-en="Women&rsquo;s art practice">Арт-практика для жінок</span>
+          <span class="t2" data-uk="Індивідуально та групово · очно й онлайн" data-en="Private &amp; group · in studio or online">Індивідуально та групово · очно й онлайн</span>
+        </span>
+        <span class="arr" aria-hidden="true">→</span>
+      </a>
+
+    </nav>
+
+    <footer class="foot">
+      <div class="social">
+        <a href="https://www.instagram.com/breast__art/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@breast__art" target="_blank" rel="noopener">TikTok</a>
+      </div>
+      <img class="stamp" src="https://breastart.github.io/assets/img/stamp.png" alt="BREAST ART · DDA — Діана Чмих">
+      <p class="copy">© <span id="y"></span> BREAST ART · DDA</p>
+    </footer>
+
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    var KEY = 'ba_lang';
+    var params = new URLSearchParams(location.search);
+    var lang = params.get('lang') || localStorage.getItem(KEY) ||
+               ((navigator.language||'').slice(0,2) === 'uk' ? 'uk' : 'uk'); // дефолт — українська
+
+    function apply(l){
+      lang = (l === 'en') ? 'en' : 'uk';
+      localStorage.setItem(KEY, lang);
+      document.documentElement.lang = (lang === 'uk') ? 'uk' : 'en';
+
+      document.querySelectorAll('[data-uk]').forEach(function(el){
+        var v = el.getAttribute('data-' + lang);
+        if (v != null) el.innerHTML = v;
+      });
+      document.querySelectorAll('.lang-switch button').forEach(function(b){
+        b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false');
+      });
+      // переносимо мову на внутрішні підсайти через ?lang=
+      document.querySelectorAll('.tile[data-base]').forEach(function(a){
+        a.setAttribute('href', a.getAttribute('data-base') + '?lang=' + lang);
+      });
+    }
+
+    document.querySelectorAll('.lang-switch button').forEach(function(b){
+      b.addEventListener('click', function(){ apply(b.getAttribute('data-lang')); });
+    });
+
+    apply(lang);
+  </script>
+</body>
+</html>
